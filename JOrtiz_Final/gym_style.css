@@ -1,0 +1,62 @@
+.a{
+	text-align:center;
+	background-color: #d5d5d5;
+	font-size:35px;
+	background-image:url('male.jpg');
+	backgroung-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position:center top;
+	background-size: cover;
+	font-family:helvetica;
+	}
+
+.b{
+	background-color: #d5d5d5;
+	margin-left: 15%;
+	margin-right: 15%;
+	font-family:helvetica;
+	}
+
+.c{
+	background-color:#9BC7F9;
+	margin-left: 15%;
+	margin-right: 15%;
+	font-size: 32px;
+	font-family:helvetica;
+}
+
+.d{
+	background-color: #d5d5d5;
+	margin-left: 15%;
+	margin-right: 15%;
+	font-size: 32px;
+	font-family: helvetica;
+	}
+	
+table, th, td {border-width:medium; background-color:#9BC7F9;}
+th, td{
+		font-size:26px;		
+		text-align:center;
+		padding:25px;
+		align:center;
+		font-family:helvetica;
+		
+		}
+
+.e{
+	font-size:28px;
+	text-decoration: underline red;
+	font-family:helvetica;
+}
+
+.f{
+	font-size:20px;
+	text-decoration:underline blue;
+	color : blue;
+	font-family:helvetica;
+}
+
+.g{
+	font-size:20px;
+	font-family:helvetica;
+}

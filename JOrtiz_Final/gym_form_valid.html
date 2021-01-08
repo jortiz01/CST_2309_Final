@@ -1,0 +1,401 @@
+<!---Jonathan Ortiz--->
+<!---Gym Form Validation Final--->
+<!--- 12/7/20--->
+
+
+
+<!DOCTYPE html>
+
+
+<html>
+<head>
+<script>
+
+function doClear(){
+
+document.GymForm.fname.value = "";
+document.GymForm.lname.value = "";
+document.GymForm.email.value = "";
+document.GymForm.uname.value = "";
+document.GymForm.password.value = "";
+document.GymForm.address.value="";
+document.GymForm.city.value="";
+document.GymForm.state.value="";
+document.GymForm.zip.value = "";
+document.GymForm.phone.value="";
+document.GymForm.age.value="";
+
+document.GymForm.gender[0].checked=false;
+document.GymForm.gender[1].checked=false;
+document.GymForm.gender[2].checked=false;
+
+document.GymForm.location[0].checked=false;
+document.GymForm.location[1].checked=false;
+document.GymForm.location[2].checked=false;
+
+document.GymForm.passport.value="passportna";
+document.GymForm.training.value="trainingna";
+
+document.GymForm.massage[0].checked=false;
+document.GymForm.massage[1].checked=false;
+
+document.GymForm.coach.value = "coachna";
+
+document.GymForm.day[0].checked=false;
+document.GymForm.day[1].checked=false;
+document.GymForm.day[2].checked=false;
+document.GymForm.day[3].checked=false;
+document.GymForm.day[4].checked=false;
+document.GymForm.day[5].checked=false;
+document.GymForm.day[6].checked=false;
+
+
+document.GymForm.time.value = "timena";
+
+
+
+}
+
+
+function validation()
+{
+var fname = document.GymForm.fname.value;
+var lname = document.GymForm.lname.value;
+var email = document.GymForm.email.value;
+var uname = document.GymForm.uname.value;
+var password = document.GymForm.password.value;
+var address = document.GymForm.address.value;
+var city = document.GymForm.city.value;
+var state = document.GymForm.state.value;
+var zip = document.GymForm.zip.value;
+var phone = document.GymForm.phone.value;
+var gymAge = document.GymForm.age.value;
+var gymGender = document.GymForm.gender.value;
+var gymLocation = document.GymForm.location.value;
+var passportChoice = document.GymForm.passport.value;
+var gymTraining = document.GymForm.training.value;
+var gymMassage = document.GymForm.massage.value;
+var gymCoach = document.GymForm.coach.value;
+var gymTime = document.GymForm.time.value;
+
+
+
+if(fname=="")
+{
+alert("Please enter your first name!");
+document.GymForm.fname.focus();
+return false;
+}
+
+if(!isNaN(fname))
+{
+alert("Please only enter Letters for your first name!");
+document.GymForm.fname.select();
+return false;
+}
+
+if ((fname.length<5) || (fname.length > 12)){
+alert("Please Enter a first name between 5 to 12 letters");
+document.GymForm.fname.select();
+return false;
+}
+
+if(lname=="")
+{
+alert("Please enter your last name!");
+document.GymForm.lname.focus();
+return false;
+}
+
+if(!isNaN(lname))
+{
+alert("Please only enter Letters for your last name!");
+document.GymForm.lname.select();
+return false;
+}
+
+if ((lname.length<5) || (lname.length > 15)){
+alert("Please Enter a last name between 5 to 15 letters");
+document.GymForm.lname.select();
+return false;
+}
+
+if(email=="")
+{
+alert("Please enter your email");
+document.GymForm.email.focus();
+return false;
+}
+
+if (uname == ""){
+alert("Please enter a username!");
+document.GymForm.uname.focus();
+return false;
+}
+
+if (uname.length<6){
+alert("Your username must be at least 6 characters");
+document.GymForm.uname.focus();
+return false;
+}
+
+if (password == ""){
+alert("Please enter a password!");
+document.GymForm.password.focus();
+return false;
+}
+
+if (password.length<6){
+alert("Your password must be at least 6 characters!");
+document.GymForm.password.focus();
+return false;
+}
+
+if(address=="")
+{
+alert("Please enter your address!");
+document.GymForm.address.focus();
+return false;
+}
+
+if(city=="")
+{
+alert("Please enter your city!");
+document.GymForm.city.focus();
+return false;
+}
+if(!isNaN(city))
+{
+alert("Please only enter Letters for your city!");
+document.GymForm.city.select();
+return false;
+}
+if ((city.length<5) || (city.length > 15)){
+alert("Please Enter a city name between 5 to 15 letters");
+document.GymForm.city.select();
+return false;
+}
+
+if(state=="")
+{
+alert("Please enter your state!");
+document.GymForm.state.focus();
+return false;
+}
+
+if(!isNaN(state))
+{
+alert("Please only enter Letters for your state!");
+document.GymForm.state.select();
+return false;
+}
+if ((state.length<2) || (state.length > 2)){
+alert("Please Enter 2 letter abbreviation for state!");
+document.GymForm.state.select();
+return false;
+}
+
+if(zip==""){
+alert("Please enter your zip code!");
+document.GymForm.zip.focus();
+return false;
+}
+
+if(isNaN(zip))
+{
+alert("Please only enter numbers for your zip code!");
+document.GymForm.zip.select();
+return false;
+}
+
+if ((zip.length<5) || (zip.length > 5)){
+alert("Please Enter a valid 5 digit zip code");
+document.GymForm.zip.select();
+return false;
+}
+
+if (phone=="")
+{
+alert("Please Enter Your Phone Number!");
+document.GymForm.phone.focus();
+return false;
+}
+
+if(isNaN(phone))
+{
+alert("Enter a valid phone number!");
+document.GymForm.phone.focus();
+return false;
+}
+
+if ((phone.length<10) || (phone.length > 10)){
+alert("Please Enter a valid 10 digit phone number!");
+document.GymForm.phone.select();
+return false;
+}
+if(gymAge==""){
+alert("Please enter your age!");
+document.GymForm.age.focus();
+return false;
+}
+
+if(isNaN(gymAge))
+{
+alert("Please only enter numbers for your age!");
+document.GymForm.age.select();
+return false;
+}
+
+if (gymGender=="")
+{
+alert("Please select your gender!");
+return false;
+}
+
+if (gymLocation=="")
+{
+alert("Please select your primary gym location!");
+return false;
+}
+
+if(passportChoice== 'passportna'){
+alert("Please select your Gym Passport prefrence!");
+document.GymForm.passport.focus()
+return false;
+}
+
+if (gymTraining == "trainingna"){
+alert("Please select at least one training plan!");
+return false;
+}
+
+if (gymMassage == ""){
+alert("Please select a massage option!");
+return false;
+}
+
+if(gymCoach == "coachna"){
+alert("Please select your preferred coach!");
+document.GymForm.coach.focus()
+return false;
+}
+
+if(gymTime == "timena"){
+alert("Please select your preferred time");
+document.GymForm.time.focus();
+return false;
+}
+
+
+alert("Your form for Jonathan's Gym has been successfully submitted!");
+return true;
+
+}
+
+
+</script>
+</head>
+
+
+<body>
+	<form name="GymForm" onsubmit="return validation()">
+		<h1>Jonathan's Gym Form</h1>
+		<fieldset>
+			<legend>Personal Information</legend>
+				First Name: <input type="text" name="fname" maxlength = "12" size = "20"> <br/><br/>
+				Last Name: <input type="text" name="lname" maxlength = "15"> <br/><br/>
+				Email:<input type="text" name="email" maxlength = "30"> <br/><br/>
+				Username:<input type = "text" name = "uname" maxlength = "12"><br><br>
+				Password:<input type = "password" name = "password" maxlength = "10"><br><br>
+				Address:<input name="address" size="40" type="text" maxlength = "20"><br><br>
+				City:<input name="city" size="15" type="text" maxlength = "12">
+				State: <input name="state" size="2" type="TEXT" maxlength = "2">
+				Zip: <input name="zip" size="5" type="text" maxlength = "5"><br><br>
+				Phone:<input name="phone" size="40" type="text" maxlength="10"><br><br>
+				Age:<input name = "age" size = "5" type = "text" maxlength = "3"><br><br>
+				Gender:
+				<input name="gender" type="radio">Male
+				<input name="gender" type="radio">Female			
+				<input name="gender" type="radio">Other
+			
+				
+				<br><br>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Gym Information</legend><br>
+				Primary Gym Location: 
+				<input name="location" type="radio">Bronx
+				<input name="location" type="radio">Manhattan
+				<input name="location" type="radio">Brooklyn<br><br>
+				
+				Would you like the Gym Passport (access to all three gyms)?
+				<select name="passport">
+				<option value = "passportna"> Select </option>
+				<option value = "yes">Yes</option>
+				<option value = "no">No</option>
+				</select><br/><br/>
+		
+				Select your training plan:<br><br>
+				<select name = "training">
+				<option value = "trainingna">Select</option>
+				<option value = "oly">Olympic Lifts</option>
+				<option value = "power">Power Lifting</option>
+				<option value = "sports">Sports Training</option>
+				<option value = "cycling">Cycling Class</option>
+				<option value = "open">Open Gym</option>
+				</select><br><br>
+				
+				Would you like to add weekly massages?
+				<input name="massage" type="radio">Yes
+				<input name="massage" type="radio">No
+				<br><br>
+				
+				
+				
+				Select the Coach you wish to work with:<br><br>
+				
+				<select name="coach">
+				<option value = "coachna"> Select </option>
+				<option value = "coach"> Coach Jessica </option>
+				<option value = "coach"> Coach Donte </option>
+				<option value = "coach"> Coach Adam </option>
+				<option value = "coach"> Coach Anne </option>
+				<option value = "coach"> No Coach </option>
+
+				</select><br/><br/>
+				
+				To help create better personalized training plans, please check <br>the days and time slot you'd
+						likely visit the gym.<br>If you have no prefrence, please leave blank:<br><br>
+
+				
+				<input name="day" type="checkbox" value = "mon">Monday
+				<input name="day" type="checkbox" value = "tues">Tuesday
+				<input name="day" type="checkbox" value = "wed">Wednesday
+				<input name="day" type="checkbox" value = "thurs">Thursday<br>
+				<input name="day" type="checkbox" value = "fri">Friday
+				<input name="day" type="checkbox" value = "sat">Saturday
+				<input name="day" type="checkbox" value = "sun">Sunday<br><br>
+				
+				Timeslot:
+				<select name='time'>
+				<option value = 'timena'> Select</option>
+				<option value = 'am'> 6:00am - 12:00pm</option>
+				<option value = 'pm'> 12:00pm - 8:00pm</option>
+				</select>
+				<br><br><br>
+				
+				Comments:<br><br>
+				<textarea name="commnet" rows="5" cols="60">Please describe what you'd like to attain from training at Jonathan's Gym.
+Some examples would be to lose weight, build muscle, tone down, or sports training.
+				</textarea><br><br>
+				
+				
+		</fieldset>
+		<br><br>
+		<p align = center><input type="submit" value="Submit Form" onClick="doSubmit()">
+		<input type="button" value="Clear Entries" onClick="doClear()"></p>
+	</form><br><br>
+	<p align = center><a href="index.html">Gym Website</p><br>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!---Jonathan Ortiz--->
+<!---Final Project--->
+<!---12/6/20--->
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gym</title>
+		<link rel="stylesheet" href = "gym_style.css"
+		type = "text/css" />
+		
+		
+		<script>
+		var imgArray = new Array(5);
+		var index = 0;
+		
+	
+		function cycle(){
+		document.banner.src = imgArray[index].src;
+		index++;
+		document.banner.height = 600;
+		document.banner.width = 1200;
+		
+		if (index>4)
+		{
+		index=0;
+		}
+		setTimeout("cycle()", 2000);
+		return;
+		}
+		
+		function startup()
+		{
+		imgArray[0] = new Image;
+		imgArray[0].src = "gym.jpg";
+		imgArray[1] = new Image;
+		imgArray[1].src = "bikeroom.jpg";
+		imgArray[2] = new Image;
+		imgArray[2].src = "gym1.jpg";
+		imgArray[3] = new Image;
+		imgArray[3].src = "gym3.jpg";
+		imgArray[4] = new Image;
+		imgArray[4].src = "gym4.jpg";
+		imgArray[5] = new Image;
+		imgArray[5].src = "gym5.jpg";
+		cycle();
+		return;
+		}
+		
+		
+		</script>	
+	</head>
+	<body class="a", onLoad="startup()">
+	<h1 class="b">Jonathan's Gym<br></h1>
+	<table align = center syle = "background-color:red;">
+		<tr><td><a href="#aboutus">About Us</a></td><td><a href="#team">Meet The Team</a></td><td><a href="#services">Our Services</a></td>
+		<td><a href="#locations">Our Locations</a></td><td><a href="#prices">Our Prices</a></td><td><a href="#info">Contact Us</a></td><td><a href="gym_form.html">Gym Form</a></td>
+		</tr></table><br><br><br><br>
+		<img name = "banner" src = "gym.jpg">
+			<br><br><br><br><br><br><br><br><br>
+			<h1 class='d' id="aboutus"><br>About Us:<br><br>
+			<table align = center><tr><td>
+			Jonathan's Gym is a place for everone to train! We are proud in our effort to<br>include everyone's level of fitness they desire!<br>Jonathan's 
+			Gym is both a competitive gym, where we compete with other <br>gyms in the area, as well as a as well as a relaxed fitness center for <br>those who just 
+			want a safe, clean area to work out in.<br></td></tr></table><br><br></h1><br><br><br><br><br><br><br><br><br>
+			<h1 class='d' id="team"><br>Meet the team:<br><br>
+			<table align = center>
+				<tr>
+					<td><img src = "jessica.jpg" width = 350px height = 350px alt = 'Coach Jessica' title = 'Coach Jessica'></td>
+					<td><h1 class = "e">Jessica</h1><h1 class = "f">Job Description:</h1>
+							<h1 class = "g">Cofounder of Jonathan's Gym<br>Strength Coach<br>Softboall Coach</h1>
+							<h1 class = "f">Qualifications:</h1><h1 class = "g">Masters in Biomechanics<br>Certified Personal Trainer</h1></td></tr>
+				<tr>
+					<td><img src = "donte.jpg" width = 350px height = 350px alt = 'Coach Donte' title = 'Coach Donte'></td>
+					<td><h1 class = "e">Donte</h1><h1 class = "f">Job Description:</h1>
+							<h1 class = "g">Head Strength Coach<br>Powerlifting Coach</h1>
+							<h1 class = "f">Qualifications:</h1><h1 class = "g">Bachelors in Physiology<br>Former Division 1 Wrestler<br>Certified Strength and Conditioning Spec.</h1></td></tr>
+				<tr>
+					<td><img src = "adam.jpg" width = 350px height = 350px alt = 'Coach Adam' title = 'Coach Adam'></td>
+					<td><h1 class = "e">Adam</h1><h1 class = "f">Job Description:</h1>
+							<h1 class = "g">Message Therapist<br>Olympic Lift Coach</h1>
+							<h1 class = "f">Qualifications:</h1><h1 class = "g">Masters in Physiology<br>Bachelors in Exercise Science<br>Liscenced Massage Therapist</h1></td></tr>
+				<tr>
+					<td><img src = "anne.jpg" width = 350px height = 350px alt = 'Coach Anne' title = 'Coach Anne'></td>
+					<td><h1 class = "e">Anne</h1><h1 class = "f">Job Description:</h1>
+							<h1 class = "g">Lacrosse Coach<br>Strength Coach<br>Cycling Instructor</h1>
+							<h1 class = "f">Qualifications:</h1><h1 class = "g">Masters of Science in Fitness and Health<br>Former Division 1 Lacross Athlete</h1></td></tr>
+			</table><br> <br></h1><br><br><br><br><br><br><br>
+			<h1 class='d' id="services"><br>Our Services:<br><br>
+			<table align = center>
+				<tr>
+					<td><img src = "cleanandjerk.jpg" width = 350px height = 350px alt = 'Clean and Jerk Movement' title = 'Clean and Jerk Movement'></td>
+					<td><h1 class = "e">Olympic Lift Training</h1>Olympic lifting is a discipline of<br>strength training with an emphasis<br>on the specific lifts performed at the<br>Olympic Games 
+					like the "snatch"<br>and "clean and jerk".<br><br>This training will be done with Coach Adam</td></tr>
+				<tr>
+					<td><img src = "deadlift2.jpg" width = 350px height = 350px alt = 'Deadlift' title = 'Deadlift'></td>
+					<td><h1 class = "e">Power Lifting</h1>Power lifting is a form of competitive lifting<br>which consists of deadlifts, squats, and<br>bench presses. 
+					<br><br>This training will be done with Coach Donte</td></tr>
+				<tr>
+					<td><img src = "massage.jpg" width = 350px height = 350px alt = 'Massage' title = 'Massage'></td>
+					<td><h1 class = "e">Sports Massage</h1>Performance massages catered each specific<br>athlete to work in tandem with workout routines.<br><br>Administered by Coach Adam</td></tr>
+				<tr>
+					<td><img src = "lacrosse.jpg" width = 350px height = 350px alt = 'Sports Training' title = 'Sports'></td>
+					<td><h1 class = "e">Sports Training</h1>Individual or team sports<br>training(lacrosse or softball). Individual<br>training allows for a more specified<br>training approach while<br>group training allows for
+						teamwork practice.<br><br>Training done by Coach Jessica and Coach Anne</br>
+			
+			</table><br><br>
+			</h1><br><br><br><br><br><br><br>
+			<h1 class='d' id="locations"><br>Our Locations:<br><br>
+			<table align = center>
+			<tr><td>Jonathan's Gym currently has three locations throughout the city.<br>Our memberships allows for a specific gym access or a passport for access<br>to all three gyms.</td></tr>
+				<tr><td>Manhattan<br>Brooklyn<br>Bronx</td></tr></table><br> <br></h1><br><br><br><br><br><br><br>
+				
+			<h1 class = 'd' id='prices'><br>Pricing:<br><br>
+			<table align = center>
+			<tr><td>One training plan with access to one coach<br>and a personalized training plan:</td><td>$100 per month</td></tr>
+			<tr><td>Open gym (No training plan) with access to<br> our equipment:</td><td>$60 per month</td></tr>
+			<tr><td>We accept credit cards and cash<br>for monthly payments</td><td>Please view our form and fill out if<br>you want to become a member of <br>Jonathan's Gym!</td></tr>
+			</table><br><br></h1><br><br><br><br><br><br><br>
+			
+			<h1 class = 'd' id = 'info'><br>Contact Us:<br><br>
+			<table align = center>
+			<tr><td>555 Main Street | (555) 555-5555 | <a href="mailto:jonathan.ortiz4@mail.citytech.cuny.edu">Gym Email</a> | 
+			<a href="gym_form.html">Gym Form</a></td></tr></table><br><br></h1>
+				
+
+	</body>
+</html>
